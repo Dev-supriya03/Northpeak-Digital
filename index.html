@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<script src="https://cdn.tailwindcss.com"></script>
+ <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+    
+</head>
+<body id="body" class="bg-white text-black transition-all duration-500">
+
+     <!-- Navbar -->
+    <nav class="sticky top-0 z-50">
+
+        <div id="navbar"
+            class="h-20 w-full shadow-md  bg-white transition-all duration-500 flex justify-evenly items-center ">
+
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <i class="ri-webhook-line text-4xl text-[#FF6A1C]"></i>
+
+                <h1 class="text-2xl font-bold text-blue-600">
+                    NorthPeak <span class="text-[#FF6A1C]">Digital</span>
+                </h1>
+            </div>
+
+            <!-- Menu -->
+            <a href="home.html" class="nav-link hidden md:block text-gray-700 font-bold hover:text-[#FF6A1C] transition">Home</a>
+
+            <a href="products.html" class="nav-link hidden md:block text-gray-700 font-bold hover:text-[#FF6A1C] transition">Products</a>
+
+            <a href="pricing.html" class="nav-link hidden md:block text-gray-700 font-bold hover:text-[#FF6A1C] transition">Pricing</a>
+
+            <a href="about.html" class="nav-link hidden md:block text-gray-700 font-bold hover:text-[#FF6A1C] transition">About</a>
+
+            <a href="testemonials.html" class="nav-link hidden md:block text-gray-700 font-bold hover:text-[#FF6A1C] transition">Testemonials</a>
+
+            <a href="contact.html" class="nav-link hidden md:block text-gray-700 font-bold hover:text-[#FF6A1C] transition">Contact</a>
+            
+
+            <!-- Dark Mode Button -->
+            <button id="themeToggle"
+                class="w-11 h-11 rounded-full bg-gray-200 hover:bg-gray-300 transition duration-300 flex justify-center items-center">
+
+                <i id="themeIcon" class="ri-moon-line text-xl"></i>
+
+            </button>
+
+                <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-3xl flex ">
+            ☰
+        </button>
+
+        </div>
+
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden md:hidden bg-white shadow-lg">
+
+        <a href="#home" class="block px-6 py-4 border-b hover:bg-blue-50">Home</a>
+
+        <a href="#about" class="block px-6 py-4 border-b hover:bg-blue-50">Products</a>
+
+        <a href="#services" class="block px-6 py-4 border-b hover:bg-blue-50">Pricing</a>
+
+        <a href="#pricing" class="block px-6 py-4 border-b hover:bg-blue-50">About</a>
+
+        <a href="#pricing" class="block px-6 py-4 border-b hover:bg-blue-50">Testemonials</a>
+
+        <a href="#contact" class="block px-6 py-4 border-b hover:bg-blue-50">Contact</a>
+
+        <div class="p-6">
+            <a href="#contact"
+                class="block text-center bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
+                Get Started
+            </a>
+        </div>
+
+        <button id="menu-btn"
+class="md:hidden text-3xl text-[#FF6A1C]">
+<i class="ri-menu-line"></i>
+</button>
+
+
+
+
+    </nav>
+
+
+<!-- Hero Section -->
+
+<section id="home.html" class="pt-32 pb-20 bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid md:grid-cols-2 gap-10 items-center">
+
+<!-- Left -->
+
+<div class="text-white">
+
+<span class="bg-white text-blue-700 px-4 py-2 rounded-full font-semibold">
+🚀 Digital Agency
+</span>
+
+<h1 class="text-3xl md:text-6xl font-bold mt-6 leading-tight">
+
+Grow Your Business
+
+<span class="text-yellow-300">
+
+With Smart Digital Solutions
+
+</span>
+
+</h1>
+
+<p class="mt-6 text-lg text-gray-200 leading-8">
+
+NorthPeak Digital helps businesses grow online through modern websites,
+branding, SEO, UI/UX design, and powerful digital marketing strategies.
+
+</p>
+
+<div class="mt-8 flex gap-4">
+
+<button class="bg-white text-blue-700 px-7 py-3 rounded-lg font-semibold hover:scale-105 duration-300">
+
+Get Started
+
+</button>
+
+<button class="border border-white px-7 py-3 rounded-lg hover:bg-white hover:text-blue-700 duration-300">
+
+Our Services
+
+</button>
+
+</div>
+
+<div class="mt-12 grid grid-cols-3 gap-8">
+
+<div>
+<h2 class="text-3xl font-bold">250+</h2>
+<p>Projects</p>
+</div>
+
+<div>
+<h2 class="text-3xl font-bold">180+</h2>
+<p>Clients</p>
+</div>
+
+<div>
+<h2 class="text-3xl font-bold">98%</h2>
+<p>Satisfaction</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- Right -->
+
+<div>
+
+<img
+src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900"
+class="rounded-3xl shadow-2xl"
+alt="Digital Agency">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Product Section -->
+<section id="products.html" class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-12">
+      <h2 class="md:text-4xl text-3xl font-bold ">Our Digital Products</h2>
+      <p class="text-gray-600 mt-3">
+        Explore our powerful digital solutions designed to grow your business.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Product 1 -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl  overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-500">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Business Website</h3>
+          <p class="text-gray-600 mt-3">
+            Modern, responsive websites that help businesses attract customers.
+          </p>
+
+          <div class="flex justify-between items-center mt-5">
+            <span class="text-blue-600 font-bold text-xl">$299</span>
+
+            <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-3 hover:shadow-2xl transition duration-500 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold">SEO Package</h3>
+          <p class="text-gray-600 mt-3">
+            Improve Google rankings and increase organic traffic.
+          </p>
+
+          <div class="flex justify-between items-center mt-5">
+            <span class="text-blue-600 font-bold text-xl">$199</span>
+
+            <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-500">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Brand Identity Kit</h3>
+          <p class="text-gray-600 mt-3">
+            Professional logo, brand colors and marketing materials.
+          </p>
+
+          <div class="flex justify-between items-center mt-5">
+            <span class="text-blue-600 font-bold text-xl">$149</span>
+
+            <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-500">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Digital Marketing</h3>
+          <p class="text-gray-600 mt-3">
+            Social media marketing, ads and lead generation campaigns.
+          </p>
+
+          <div class="flex justify-between items-center mt-5">
+            <span class="text-blue-600 font-bold text-xl">$249</span>
+
+            <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-3 hover:shadow-2xl transition duration-500 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Mobile App UI</h3>
+          <p class="text-gray-600 mt-3">
+            Beautiful and user-friendly mobile application designs.
+          </p>
+
+          <div class="flex justify-between items-center mt-5">
+            <span class="text-blue-600 font-bold text-xl">$349</span>
+
+            <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-500">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Complete Agency Package</h3>
+          <p class="text-gray-600 mt-3">
+            Website, SEO, Branding and Marketing in one premium package.
+          </p>
+
+          <div class="flex justify-between items-center mt-5">
+            <span class="text-blue-600 font-bold text-xl">$999</span>
+
+            <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center mb-12">
+            <h2 class="md:text-4xl text-3xl font-bold text-gray-800">Simple & Transparent Pricing</h2>
+            <p class="text-gray-600 mt-3">
+                Choose the perfect plan for your business needs.
+            </p>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Starter -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 duration-300">
+                <h3 class="text-2xl font-bold text-center">Starter</h3>
+
+                <p class="text-center text-5xl font-bold text-blue-600 my-6">
+                    $99
+                </p>
+
+                <ul class="space-y-4 text-gray-600">
+                    <li>✔ 5 Page Website</li>
+                    <li>✔ Responsive Design</li>
+                    <li>✔ Contact Form</li>
+                    <li>✔ Basic SEO</li>
+                    <li>✔ 1 Month Support</li>
+                </ul>
+
+                <button
+                    class="mt-8 w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
+                    Choose Plan
+                </button>
+            </div>
+
+            <!-- Professional -->
+            <div
+                class="bg-blue-600 text-white rounded-2xl shadow-2xl p-8 scale-105 relative">
+
+                <span
+                    class="absolute top-4 right-4 bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold">
+                    Most Popular
+                </span>
+
+                <h3 class="text-2xl font-bold text-center">
+                    Professional
+                </h3>
+
+                <p class="text-center text-5xl font-bold my-6">
+                    $299
+                </p>
+
+                <ul class="space-y-4">
+                    <li>✔ 10 Page Website</li>
+                    <li>✔ Premium UI/UX</li>
+                    <li>✔ Advanced SEO</li>
+                    <li>✔ Speed Optimization</li>
+                    <li>✔ Social Media Integration</li>
+                    <li>✔ 6 Months Support</li>
+                </ul>
+
+                <button
+                    class="mt-8 w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-gray-100">
+                    Choose Plan
+                </button>
+
+            </div>
+
+            <!-- Enterprise -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 duration-300">
+
+                <h3 class="text-2xl font-bold text-center">
+                    Enterprise
+                </h3>
+
+                <p class="text-center text-5xl font-bold text-blue-600 my-6">
+                    $599
+                </p>
+
+                <ul class="space-y-4 text-gray-600">
+                    <li>✔ Unlimited Pages</li>
+                    <li>✔ Custom Web Application</li>
+                    <li>✔ Complete Branding</li>
+                    <li>✔ Premium SEO</li>
+                    <li>✔ Dedicated Project Manager</li>
+                    <li>✔ 24/7 Priority Support</li>
+                </ul>
+
+                <button
+                    class="mt-8 w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
+                    Choose Plan
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Left Image -->
+            <div>
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900"
+                    alt="About Us"
+                    class="rounded-2xl shadow-xl w-full">
+            </div>
+
+            <!-- Right Content -->
+            <div>
+
+                <span class="text-blue-600 font-semibold uppercase tracking-widest">
+                    About NorthPeak Digital
+                </span>
+
+                <h2 class="text-2xl font-bold text-gray-800 mt-4">
+                    We Build Digital Experiences That Drive Success
+                </h2>
+
+                <p class="text-gray-600 mt-6 leading-8">
+                    At <span class="font-semibold text-blue-600">NorthPeak Digital</span>,
+                    we help businesses grow through innovative web development,
+                    creative branding, modern UI/UX design, SEO optimization,
+                    and result-driven digital marketing strategies.
+                </p>
+
+                <p class="text-gray-600 mt-4 leading-8">
+                    Our talented team is passionate about creating beautiful,
+                    responsive, and high-performing digital solutions that
+                    strengthen your online presence and help you reach more
+                    customers.
+                </p>
+
+                <!-- Features -->
+
+                <div class="grid grid-cols-2 gap-6 mt-8">
+
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl">✔️</span>
+                        <div>
+                            <h4 class="font-bold">Creative Team</h4>
+                            <p class="text-gray-500 text-sm">Expert Designers & Developers</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl">🚀</span>
+                        <div>
+                            <h4 class="font-bold">Fast Delivery</h4>
+                            <p class="text-gray-500 text-sm">On-Time Project Completion</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl">🌍</span>
+                        <div>
+                            <h4 class="font-bold">Global Clients</h4>
+                            <p class="text-gray-500 text-sm">Serving Businesses Worldwide</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl">💬</span>
+                        <div>
+                            <h4 class="font-bold">24/7 Support</h4>
+                            <p class="text-gray-500 text-sm">Always Ready to Help</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Stats -->
+
+                <div class="grid grid-cols-3 gap-6 mt-10 text-center">
+
+                    <div>
+                        <h3 class="text-4xl font-bold text-blue-600">250+</h3>
+                        <p class="text-gray-600">Projects</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-4xl font-bold text-blue-600">180+</h3>
+                        <p class="text-gray-600">Happy Clients</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-4xl font-bold text-blue-600">10+</h3>
+                        <p class="text-gray-600">Years Experience</p>
+                    </div>
+
+                </div>
+
+                <!-- Button -->
+
+                <button class="mt-10 bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 duration-300">
+                    Learn More
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center mb-14">
+            <h2 class="md:text-4xl text-3xl font-bold text-gray-800">
+                What Our Clients Say
+            </h2>
+            <p class="text-gray-600 mt-3 text-lg">
+                Trusted by businesses worldwide for delivering exceptional digital solutions.
+            </p>
+        </div>
+
+        <!-- Testimonials Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg l hover:-translate-y-3 hover:shadow-2xl transition duration-500">
+
+                <div class="flex text-yellow-400 text-xl mb-4">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p class="text-gray-600 leading-7">
+                    "NorthPeak Digital completely transformed our online presence.
+                    Their team built a beautiful website that helped increase our
+                    customer engagement and sales."
+                </p>
+
+                <div class="flex items-center mt-6">
+
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg"
+                        class="w-14 h-14 rounded-full object-cover">
+
+                    <div class="ml-4">
+                        <h4 class="font-bold text-lg">Emily Johnson</h4>
+                        <p class="text-gray-500">CEO, Bright Solutions</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:-translate-y-3 hover:shadow-2xl transition duration-500">
+
+                <div class="flex text-yellow-400 text-xl mb-4">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p class="text-gray-600 leading-7">
+                    "Professional, creative, and always on time.
+                    Their SEO and branding services helped our business reach
+                    thousands of new customers."
+                </p>
+
+                <div class="flex items-center mt-6">
+
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg"
+                        class="w-14 h-14 rounded-full object-cover">
+
+                    <div class="ml-4">
+                        <h4 class="font-bold text-lg">Michael Brown</h4>
+                        <p class="text-gray-500">Marketing Director</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:-translate-y-3 hover:shadow-2xl transition duration-500">
+
+                <div class="flex text-yellow-400 text-xl mb-4">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p class="text-gray-600 leading-7">
+                    "Amazing experience! The team understood our vision perfectly
+                    and delivered a modern, responsive website beyond our expectations."
+                </p>
+
+                <div class="flex items-center mt-6">
+
+                    <img src="https://randomuser.me/api/portraits/women/12.jpg"
+                        class="w-14 h-14 rounded-full object-cover">
+
+                    <div class="ml-4">
+                        <h4 class="font-bold text-lg">Sophia Wilson</h4>
+                        <p class="text-gray-500">Founder, Creative Hub</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-800">
+                Contact Us
+            </h2>
+            <p class="text-gray-600 mt-3">
+                Have a project in mind? We'd love to hear from you.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-10">
+
+            <!-- Contact Information -->
+            <div class="bg-blue-600 text-white rounded-2xl p-10">
+
+                <h3 class="text-3xl font-bold mb-6">
+                    Get In Touch
+                </h3>
+
+                <p class="mb-8 text-gray-200">
+                    Feel free to contact us for website development,
+                    branding, SEO, UI/UX, or digital marketing services.
+                </p>
+
+                <div class="space-y-6">
+
+                    <div class="flex items-center gap-4">
+                        <div class="bg-white text-blue-600 rounded-full p-3 text-xl">
+                            📍
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Address</h4>
+                            <p>New York, USA</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="bg-white text-blue-600 rounded-full p-3 text-xl">
+                            📞
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Phone</h4>
+                            <p>+1 234 567 890</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="bg-white text-blue-600 rounded-full p-3 text-xl">
+                            ✉️
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Email</h4>
+                            <p>info@northpeakdigital.com</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+
+                <form id="contactForm">
+
+                    <div class="mb-5">
+                        <label class="block mb-2 font-semibold">
+                            Full Name
+                        </label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div class="mb-5">
+                        <label class="block mb-2 font-semibold">
+                            Email Address
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div class="mb-5">
+                        <label class="block mb-2 font-semibold">
+                            Phone Number
+                        </label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                            class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div class="mb-5">
+                        <label class="block mb-2 font-semibold">
+                            Message
+                        </label>
+                        <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Write your message..."
+                            class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 pt-16">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Company -->
+        <div>
+            <h2 class="text-3xl font-bold text-white mb-4">
+                NorthPeak Digital
+            </h2>
+
+            <p class="leading-7 text-gray-400">
+                We help businesses grow through innovative web development,
+                UI/UX design, branding, SEO, and digital marketing solutions.
+            </p>
+
+            <div class="flex gap-4 mt-6">
+
+                <a href="#" class="bg-gray-800 p-3 rounded-full hover:bg-blue-600 transition">
+                    🌐
+                </a>
+
+                <a href="#" class="bg-gray-800 p-3 rounded-full hover:bg-blue-600 transition">
+                    📘
+                </a>
+
+                <a href="#" class="bg-gray-800 p-3 rounded-full hover:bg-blue-600 transition">
+                    📷
+                </a>
+
+                <a href="#" class="bg-gray-800 p-3 rounded-full hover:bg-blue-600 transition">
+                    💼
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+
+            <h3 class="text-xl font-bold text-white mb-5">
+                Quick Links
+            </h3>
+
+            <ul class="space-y-3">
+
+                <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+
+                <li><a href="#about" class="hover:text-blue-400">About</a></li>
+
+                <li><a href="#services" class="hover:text-blue-400">Services</a></li>
+
+                <li><a href="#pricing" class="hover:text-blue-400">Pricing</a></li>
+
+                <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Services -->
+        <div>
+
+            <h3 class="text-xl font-bold text-white mb-5">
+                Our Services
+            </h3>
+
+            <ul class="space-y-3">
+
+                <li>Web Development</li>
+
+                <li>UI/UX Design</li>
+
+                <li>SEO Optimization</li>
+
+                <li>Digital Marketing</li>
+
+                <li>Brand Identity</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+        <div>
+
+            <h3 class="text-xl font-bold text-white mb-5">
+                Contact Info
+            </h3>
+
+            <div class="space-y-4">
+
+                <p>📍 New York, USA</p>
+
+                <p>📞 +1 (234) 567-8901</p>
+
+                <p>✉️ hello@northpeakdigital.com</p>
+
+                <p>🕒 Mon - Fri : 9:00 AM - 6:00 PM</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+
+    <div class="border-t border-gray-700 mt-12">
+
+        <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center">
+
+            <p class="text-gray-400 text-center">
+                © 2026 <span class="text-white font-semibold">NorthPeak Digital</span>. All Rights Reserved.
+            </p>
+
+            <p class="text-gray-400 text-center mt-3 md:mt-0">
+                Built for
+                <a href="https://digitalheroes.in/"
+                   target="_blank"
+                   class="text-blue-400 hover:underline">
+                    Digital Heroes
+                </a>
+                Training Task
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+    <script>
+
+         const body = document.getElementById("body");
+        const navbar = document.getElementById("navbar");
+        const toggle = document.getElementById("themeToggle");
+        const icon = document.getElementById("themeIcon");
+        const links = document.querySelectorAll(".nav-link");
+
+        toggle.addEventListener("click", () => {
+
+            body.classList.toggle("dark");
+
+            if (body.classList.contains("dark")) {
+
+                body.classList.remove("bg-white", "text-black");
+                body.classList.add("bg-gray-900", "text-white");
+
+                navbar.classList.remove("bg-white");
+                navbar.classList.add("bg-gray-800");
+
+                toggle.classList.remove("bg-gray-200");
+                toggle.classList.add("bg-gray-700");
+
+                icon.classList.remove("ri-moon-line");
+                icon.classList.add("ri-sun-line");
+                icon.classList.add("text-yellow-400");
+
+                links.forEach(link => {
+                    link.classList.remove("text-gray-700");
+                    link.classList.add("text-white");
+                });
+
+            } else {
+
+                body.classList.remove("bg-gray-900", "text-white");
+                body.classList.add("bg-white", "text-black");
+
+                navbar.classList.remove("bg-gray-800");
+                navbar.classList.add("bg-white");
+
+                toggle.classList.remove("bg-gray-700");
+                toggle.classList.add("bg-gray-200");
+
+                icon.classList.remove("ri-sun-line", "text-yellow-400");
+                icon.classList.add("ri-moon-line");
+
+                links.forEach(link => {
+                    link.classList.remove("text-white");
+                    link.classList.add("text-gray-700");
+                });
+
+            }
+
+            });
+
+            // 
+            const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+
+    mobileMenu.classList.toggle("hidden");
+
+    if (mobileMenu.classList.contains("hidden")) {
+
+        menuBtn.innerHTML = '<i class="ri-menu-line"></i>';
+
+    } else {
+
+        menuBtn.innerHTML = '<i class="ri-close-line"></i>';
+
+    }
+
+});
+
+    </script>
+
+    
+</body>
+</html>
